@@ -4,6 +4,8 @@ import { Geist } from 'next/font/google'
 import { ApolloClientProvider } from '@/providers/ApolloClientProvider'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
+import { ThemeProvider } from '@/providers/ThemeProvider'
+import { ToastProvider } from '@/providers/ToastProvider'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -20,11 +22,18 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const messages = await getMessages()
 
   return (
-    <html lang={locale} >
+    <html lang={locale} suppressHydrationWarning>
       <body className={geistSans.variable} >
         <ApolloClientProvider>
           <NextIntlClientProvider messages={messages}>
-            {children}
+            <ThemeProvider
+              attribute='class'
+              defaultTheme='dark'
+              disableTransitionOnChange
+            >
+              <ToastProvider/>
+              {children}
+            </ThemeProvider>
           </NextIntlClientProvider>
         </ApolloClientProvider>
       </body>

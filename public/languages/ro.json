@@ -1,5 +1,23 @@
 {
-    "home" : {
-        "title": "Pagina Principala"
+  "auth": {
+    "register": {
+      "heading": "Înregistrare în TeaStream",
+      "backButtonLabel": "Ai deja un cont? Autentifică-te",
+      "usernameLabel": "Nume de utilizator",
+      "usernameDescription": "Ceilalți utilizatori te vor cunoaște sub acest nume.",
+      "emailLabel": "E-mail",
+      "emailDescription": "Este posibil să folosim adresa ta de e-mail pentru a trimite mesaje referitoare la contul tău.",
+      "passwordLabel": "Parolă",
+      "passwordDescription": "Parola trebuie să conțină cel puțin 8 caractere.",
+      "submitButton": "Înregistrează-te",
+      "successAlertTitle": "Verifică-ți e-mailul",
+      "successAlertDescription": "Un e-mail de confirmare a fost trimis pe adresa ta. Dacă nu găsești mesajul, verifică folderul „Spam”.",
+      "errorMessage": "Eroare la crearea contului"
+    },
+    "verify": {
+      "heading": "Verificarea contului",
+      "successMessage": "Cont verificat cu succes",
+      "errorMessage": "Eroare la verificare"
     }
+  }
 }
