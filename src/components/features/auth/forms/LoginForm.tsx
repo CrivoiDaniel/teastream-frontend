@@ -11,10 +11,11 @@ import { useLoginUserMutation } from "@/graphql/generated/output";
 import { toast } from "sonner";
 
 import { useTranslations } from "next-intl";
-import { loginSchema, TypeLoginSchema } from "@/schemas/auth/login.schema";
+import { loginSchema,type TypeLoginSchema } from "@/schemas/auth/login.schema";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/common/InputOTP";
+import Link from "next/link";
 export function LoginForm() {
 
     const t = useTranslations('auth.login')
@@ -33,7 +34,7 @@ export function LoginForm() {
 
     const [login, { loading: isLoadingLogin }] = useLoginUserMutation({
         onCompleted(data) {
-            
+
             if (data.loginUser.message) {
                 setIsShowTwoFactor(true)
 
@@ -106,7 +107,17 @@ export function LoginForm() {
                                 name="password"
                                 render={({ field }) =>
                                     <FormItem>
-                                        <FormLabel>{t('passwordLabel')}</FormLabel>
+                                        <div className="flex items-center justify-between">
+                                            <FormLabel>
+                                                {t('passwordLabel')}
+                                            </FormLabel>
+                                            <Link 
+                                            href='/account/recovery' 
+                                            className="ml-auto inline-block text-sm">
+                                                {t('forgotPassword')}
+                                            </Link>
+
+                                        </div>
                                         <FormControl>
                                             <Input
                                                 placeholder="********"

@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import { AuthWrapper } from "../AuthWrapper";
-import { createAccountSchema, TypeCreateAccountSchema } from "@/schemas/auth/create-account.schema";
+import { createAccountSchema,type TypeCreateAccountSchema } from "@/schemas/auth/create-account.schema";
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel } from "@/components/ui/common/Form";

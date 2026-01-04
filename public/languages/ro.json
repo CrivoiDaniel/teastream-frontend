@@ -32,6 +32,27 @@
       "submitButton": "Autentificare",
       "successMessage": "Te-ai autentificat cu succes",
       "errorMessage": "Eroare la autentificare"
+    },
+    "resetPassword": {
+      "heading": "Resetare parolă",
+      "backButtonLabel": "Ai deja un cont? Autentifică-te",
+      "emailLabel": "E-mail",
+      "emailDescription": "Adresa de e-mail pe care ai introdus-o la înregistrare",
+      "submitButton": "Resetează parola",
+      "successAlertTitle": "Link trimis",
+      "successAlertDescription": "Am trimis un link pentru resetarea parolei pe adresa ta de e-mail. Dacă ai notificările Telegram activate, link-ul a fost trimis și acolo",
+      "errorMessage": "Eroare la resetarea parolei"
+    },
+    "newPassword": {
+      "heading": "Parolă nouă",
+      "backButtonLabel": "Ai deja un cont? Autentifică-te",
+      "passwordLabel": "Parolă nouă",
+      "passwordDescription": "Parola pe care ai introdus-o la înregistrare",
+      "passwordRepeatLabel": "Repetă parola",
+      "passwordRepeatDescription": "Repetă noua parolă pentru confirmare",
+      "submitButton": "Resetează parola",
+      "successMessage": "Parola a fost schimbată cu succes",
+      "errorMessage": "Eroare la setarea noii parole"
     }
   }
 }
