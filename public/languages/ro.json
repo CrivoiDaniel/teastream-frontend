@@ -18,6 +18,20 @@
       "heading": "Verificarea contului",
       "successMessage": "Cont verificat cu succes",
       "errorMessage": "Eroare la verificare"
+    },
+    "login": {
+      "heading": "Autentificare în TeaStream",
+      "backButtonLabel": "Nu ai un cont? Înregistrează-te!",
+      "pinLabel": "Cod din 6 cifre",
+      "pinDescription": "Introdu codul din aplicația ta de autentificare.",
+      "loginLabel": "Login / Utilizator",
+      "loginDescription": "Numele sau adresa de e-mail introduse la înregistrare.",
+      "passwordLabel": "Parolă",
+      "passwordDescription": "Parola introdusă la înregistrare.",
+      "forgotPassword": "Ai uitat parola?",
+      "submitButton": "Autentificare",
+      "successMessage": "Te-ai autentificat cu succes",
+      "errorMessage": "Eroare la autentificare"
     }
   }
 }
